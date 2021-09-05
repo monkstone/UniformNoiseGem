@@ -1,4 +1,4 @@
-package micycle.uniformnoise;
+package micycle.UniformNoiseJava;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -8,29 +8,29 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author Michael Carleton
  *
  */
-public class UniformNoise {
+public class UniformNoiseJava {
 
 	private int seed;
 	private int octaves;
 	private double persistence;
 
 	/**
-	 * Creates a UniformNoise instance with a random seed.
+	 * Creates a UniformNoiseJava instance with a random seed.
 	 */
-	public UniformNoise() {
+	public UniformNoiseJava() {
 		this(ThreadLocalRandom.current().nextInt());
 	}
 
 	/**
-	 * Creates a UniformNoise instance with the given seed.
+	 * Creates a UniformNoiseJava instance with the given seed.
      * @param seed
 	 */
-	public UniformNoise(final int seed) {
+	public UniformNoiseJava(final int seed) {
 		this.seed = seed;
 	}
 
 	/**
-	 * Sets the seed used by the UniformNoise instance.
+	 * Sets the seed used by the UniformNoiseJava instance.
      * @param seed
 	 */
 
@@ -39,7 +39,7 @@ public class UniformNoise {
 	}
 
 	/**
-	 * Sets the number of octaves to be used by the UniformNoise instance.
+	 * Sets the number of octaves to be used by the UniformNoiseJava instance.
 		 * @param octaves
 	 */
 	public final void setOctaves(final int octaves) {
@@ -47,7 +47,7 @@ public class UniformNoise {
 	}
 
 	/**
-	 * Sets the persistence value to be used by the UniformNoise instance.
+	 * Sets the persistence value to be used by the UniformNoiseJava instance.
 		 * @param ocatves
 
 */
@@ -65,7 +65,7 @@ public class UniformNoise {
 	 *                    successive octave
 	 * @return approximately uniformly distributed noise value between [ 0, 1 ]
 	 */
-	public double uniformNoise(final double x, final double y) {
+	public double UniformNoiseJava(final double x, final double y) {
 		double noise = 0;
 		double frequency = 1;
 		double amplitude = 1;
@@ -90,7 +90,7 @@ public class UniformNoise {
 	 *                    successive octave
 	 * @return approximately uniformly distributed noise value between [ 0, 1 ]
 	 */
-	public double uniformNoise(final double x, final double y, final double z) {
+	public double UniformNoiseJava(final double x, final double y, final double z) {
 		double noise = 0;
 
 		double frequency = 1;
